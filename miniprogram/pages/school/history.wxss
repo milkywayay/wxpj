@@ -1,0 +1,23 @@
+.lssues{
+  margin:30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid;
+}
+
+.nickName{
+  padding-top: 30rpx;
+}
+
+.derive{
+  border-radius: 30rpx;
+  background-color: rgba(214, 147, 58, 0.842);
+  color: white;
+  padding:20rpx;
+  margin-top: 20rpx;
+  width: 30%;
+  text-align: center;
+}
+
+.derive:active{
+  background-color: rgb(14, 196, 196);
+}

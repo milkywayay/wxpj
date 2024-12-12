@@ -1,0 +1,29 @@
+.container{
+  padding:30rpx;
+  font-size: larger;
+}
+
+.container1{
+  right: 60rpx;
+  position: fixed;
+}
+
+.info1{
+  background-color: cornflowerblue;
+  padding:20rpx;
+  border-radius: 20rpx;
+  color: white;
+  height: 1000rpx;
+}
+
+.LOGO{
+  background-color: rgba(214, 147, 58, 0.842);
+  border-radius: 30rpx;
+}
+
+
+.logo{
+  height: 100rpx;
+  width: 100rpx;
+  
+}

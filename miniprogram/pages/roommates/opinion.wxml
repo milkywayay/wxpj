@@ -1,0 +1,5 @@
+<view class="container" wx:if="{{!opinion_group}}">
+<view class="attention">您当前未加入任何群组</view>
+<view class="word" bind:tap="creat">创建群组</view>
+<view class="word" bind:tap="add">加入群组</view>
+</view>

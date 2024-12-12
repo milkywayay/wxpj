@@ -1,0 +1,36 @@
+<view class="auditing" wx:if="{{!auditing}}">
+  <view class="container" wx:if="{{type=='nickName'}}">
+    <view class="word">请输入新昵称:</view>
+    <input class="input" bindinput="input" />
+    <view class="confirm1" wx:if="{{!nickName}}">确定</view>
+    <view class="confirm" wx:if="{{nickName}}" bindtap='confirm_input'>确定</view>
+  </view>
+</view>
+
+  <view class="auditing" wx:if="{{!auditing2}}">
+    <view class="container" wx:if="{{type=='avater'}}">
+      <view class="image-preview" wx:if="{{imgURL}}">
+        <image src="{{imgURL}}" mode="aspectFit"></image>
+      </view>
+      <view class="upload-container">
+        <button bind:tap="uploadImage" type="primary">上传新头像</button>
+      </view>
+      <view class="confirm" wx:if="{{imgURL}}" bindtap='confirm_imgURL'>确定</view>
+    </view>
+  </view>
+
+
+
+
+<view wx:if="{{type==='nickName'}}">
+  <view class="auditing" wx:if="{{auditing}}">
+    <view class="old_nickName">当前昵称:{{old_nickName}}</view>
+    <view class="new_nickName">新昵称:{{new_nickName}}</view>
+    <view class="state">状态:审核中</view>
+  </view>
+</view>
+<view wx:else>
+  <view class="auditing" wx:if="{{auditing2}}">
+    <view class="state">新头像状态:审核中</view>
+  </view>
+</view>

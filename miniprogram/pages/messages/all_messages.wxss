@@ -1,0 +1,93 @@
+.container_search {
+  background-color: rgba(214, 147, 58, 0.842);
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search_input {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20rpx;
+  border-radius: 30rpx;
+}
+
+.search_photo {
+  height: 72rpx;
+  width: 72rpx;
+  transition: transform 0.2s ease; /* 平滑过渡 */
+}
+
+.search_photo:active {
+  transform: scale(1.2); /* 点击时放大 */
+}
+
+.attention {
+  height: 72rpx;
+  width: 72rpx;
+}
+
+.attention:active{
+  transform: scale(1.2); /* 点击时放大 */
+}
+
+.avater {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.unReads {
+  background-color:rgba(214, 147, 58, 0.842);
+  color: white;
+  padding: 10rpx;
+  border-radius: 90%;
+  text-align: center;
+  font-size: 22rpx;
+  width: 30rpx;
+  height: 3 0rpx;
+}
+
+.container2 {
+  display: flex;
+}
+
+.container3 {
+  margin-left: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.container4 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 新的容器样式，确保time和unReads垂直对齐 */
+.time_unReads_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.time {
+  font-size: smaller;
+  color: gray;
+}
+
+.nickName {
+  font-size: 33rpx;
+}
+
+.messages {
+  border-bottom: 1rpx solid rgba(214, 147, 58, 0.2);
+  padding: 20rpx;
+}
+
+.message {
+  font-weight: 200;
+  font-size: 25rpx;
+}

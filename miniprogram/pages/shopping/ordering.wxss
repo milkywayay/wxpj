@@ -1,0 +1,131 @@
+page{
+  background-color: rgb(231, 229, 227);
+}
+.container{
+  margin:20rpx;
+  background-color: white;
+  padding:30rpx;
+  border-radius: 30rpx;
+}
+
+.container2{
+  margin: 20rpx;
+  display: flex;
+  justify-content:space-between;
+}
+
+.imgurl{
+  flex:2;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 20rpx;
+}
+
+.commodity_brief{
+  font-size: 25rpx;
+  font-weight: 300;
+  margin-top: 10rpx;
+}
+
+.container3{
+  flex:4;
+  margin-left:20rpx;
+}
+
+.money,
+.money2{
+  color: red;
+  font-size: larger;
+  font-weight: 600;
+  margin-top: 10rpx;
+}
+
+.number{
+  background-color: rgb(231, 229, 227);  
+  height: 60rpx; 
+  width: 60rpx;  
+  text-align: center; 
+  line-height: 60rpx; 
+  padding: 0; 
+  border-radius: 20rpx;  
+  margin-left: 10rpx; 
+}
+.container4{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container5{
+  display: flex;  
+  justify-content: center;  
+  align-items: center; 
+}
+
+.add{
+  margin-left:10rpx;
+  height: 35rpx;
+  width: 35rpx;
+}
+
+.subtract{
+  height: 40rpx;
+  width: 40rpx;
+}
+
+
+.container01{
+  display: flex;
+}
+
+.address_nickName{
+  flex:1
+}
+
+.address_phoneNumber{
+  flex:5
+}
+
+.change{
+  height: 30rpx;
+  width: 30rpx;
+  background-color:rgb(69, 130, 165);
+  padding:20rpx;
+  border-radius: 30rpx;
+}
+
+.change:active{
+  background-color: lightblue;
+}
+
+.container001{
+  display: flex;
+  justify-content: space-between;
+}
+
+.money2{
+  font-size: 50rpx;
+}
+
+
+.container6{
+  background-color: white;  
+  padding: 30rpx; 
+  display: flex;  
+  align-items: center;  
+  justify-content: space-between;  
+  position: absolute;  
+  bottom: 0;  
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.confirm{
+  background-color: rgb(235, 32, 32);
+  padding:30rpx;
+  border-radius: 30rpx;
+  color: white;
+}
+
+.confirm:active{
+  background-color: rgb(182, 170, 59);
+}

@@ -1,0 +1,50 @@
+<!-- <view class="lbs">
+  <image class="topimg" src="../../asset/top.svg"></image>
+  <button class="mainbtn" bindtap="tomap">获取定位</button>
+</view> -->
+
+<image src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/首页的图片/首页大图.jpg' class='big_photo' mode="aspectFill"></image>
+
+
+
+<!-- 校园服务 -->
+<view class="container">
+  <view class="container1">
+    <image class='school_sever_photo' bind:tap="school_sever" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/首页的图片/校园服务.png' />
+    <view class="school_sever_word" bind:tap="school_sever" type="primary">校园服务</view>
+  </view>
+
+
+  <!-- 人格评价 -->
+  <view class="container2">
+    <image class='judge_photo' bind:tap="judge" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/首页的图片/人格评价.png' />
+    <view class="judge_word" bind:tap="judge">人格评价</view>
+  </view>
+
+
+  <!-- 多寰商城 -->
+  <view class="container3">
+  <image class='shopping_photo' bind:tap="shopping"  src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/首页的图片/多寰商城.png"/>
+  <view class="shopping_word" bind:tap="shopping">多寰商城</view>
+  </view>
+
+
+
+  <!-- 办公预约 -->
+  <view class="container4">
+    <image class='booking_photo' bind:tap="booking" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/首页的图片/办公预约.png' />
+    <view class="booking_word" bind:tap="booking">办公预约</view>
+  </view>
+
+
+  <!-- 联系我们 -->
+  <view class="container5">
+    <image class='tea_photo' bind:tap="call" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/首页的图片/联系我们.png' />
+    <view class="tea_word" bind:tap="call">联系我们</view>
+  </view>
+</view>
+
+
+
+
+<!-- <button bind:tap="test" type="primary">test</button> -->

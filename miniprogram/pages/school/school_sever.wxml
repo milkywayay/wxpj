@@ -1,0 +1,45 @@
+<!-- <view class="address_address">{{address.address}}</view>
+<view class="address_adinfo">{{address.adinfo}}</view> -->
+
+<view class="container">
+  <image src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/地址.png' class='location_photo' bind:tap="location"></image>
+  <view class="address_formatted" bind:tap="location">{{address_formatted}} </view>
+</view>
+
+
+<view class="container1">
+
+
+  <!-- 飞翔的厕纸 -->
+  <view class="toilet_paper">
+    <image bind:tap="toilet_paper" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/卫生纸.png" class="toilet_paper_photo"></image>
+    <view class="toilet_paper_word" bind:tap="toilet_paper">飞翔的厕纸</view>
+  </view>
+
+
+  <!-- 代取快递 -->
+  <!-- 
+  <view class="getParcel">
+    <image bind:tap="getParcel" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/代取快递.png' class="getParcel_photo"></image>
+    <view class="getParcel_whrd" bind:tap="getParcel">代取快递</view>
+  </view> -->
+
+
+  <!-- 多寰商铺 -->
+  <view class="toilet_paper">
+    <!-- <image bind:tap="DuoHuanShangPu" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/多元商铺.png" class="toilet_paper_photo" mode="aspectFit"></image>
+    <view class="toilet_paper_word" bind:tap="DuoHuanShangPu">多元商铺</view> -->
+    <image bind:tap="opinion" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/室友意见.png" class="toilet_paper_photo" mode="aspectFit"></image>
+    <view class="toilet_paper_word" bind:tap="opinion">室友意见</view>
+  </view>
+  <view class="toilet_paper" bind:tap="getData">
+    <image bind:tap="getData" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/数据收集.png" class="toilet_paper_photo" mode="aspectFit"></image>
+    <view class="toilet_paper_word" bind:tap="getData">数据收集</view>
+  </view>
+
+  <view class="toilet_paper" >
+    <image bind:tap="teacher" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/校董.png" class="toilet_paper_photo" mode="aspectFit"></image>
+    <view class="toilet_paper_word" bind:tap="teacher">校董入口</view>
+  </view>
+</view>
+

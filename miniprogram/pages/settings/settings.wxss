@@ -1,0 +1,53 @@
+.container {
+  background-color: #f5f5f5;
+  padding: 10rpx;
+}
+
+.address_manage {
+  margin-top: 30rpx;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+  height: 100rpx;
+  text-align: center;
+  overflow: hidden;
+  font-size: 30rpx;
+  line-height: 3.5rem;
+  padding: auto;
+}
+
+.login {
+  background-color:rgb(221, 165, 100);
+  color: rgb(245, 238, 238);
+}
+
+.login:active{
+  background-color: rgba(19, 83, 83, 0.425);
+}
+
+
+
+
+.log_out,
+.seller,
+.manager{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+  height: 100rpx;
+  text-align: center;
+  overflow: hidden;
+  font-size: 30rpx;
+  line-height: 3.5rem;
+  padding: auto;
+}
+
+
+.seller_entrance:active,
+.be_seller:active,
+.seller:active,
+.manager:active,
+.address_manage:active,
+.log_out:active{
+  background-color: #9aa5a5;
+}

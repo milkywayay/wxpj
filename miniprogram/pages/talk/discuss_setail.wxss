@@ -1,0 +1,227 @@
+.container {
+  padding: 30rpx;
+}
+
+
+.heading {
+  font-size: 60rpx;
+  font-weight: bolder;
+}
+
+.nickName {
+  font-size: 30rpx;
+}
+
+.body {
+  font-size: 35rpx;
+  margin-top: 60rpx;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container1_1 {
+  display: flex;
+}
+
+.container1_1_1 {
+  margin-left: 20rpx;
+  display: grid;
+}
+
+.time {
+  color: rgba(214, 147, 58, 0.842);
+  font-size: 25rpx;
+}
+
+
+.photo-container {
+  width: 230rpx;
+  height: 230rpx;
+  overflow: hidden;
+  position: relative;
+  /* margin: 10rpx; */
+}
+
+.avater {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 60rpx;
+}
+
+
+.discuss_photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 100%;
+}
+
+.attention1 {
+  background-color: rgba(214, 147, 58, 0.842);
+  color: white;
+  width: 100rpx;
+  text-align: center;
+  margin: auto 0;
+  padding: 20rpx;
+  border: 1rpx solid rgba(214, 147, 58, 0.842);
+  border-radius: 40rpx;
+}
+
+.attention1:active {
+  background-color: rgb(117, 82, 82);
+}
+
+.attention2 {
+  border: 1rpx solid rgba(214, 147, 58, 0.842);
+  width: 100rpx;
+  text-align: center;
+  margin: auto 0;
+  padding: 20rpx;
+  border-radius: 40rpx;
+}
+
+
+/* 第二部分 */
+
+.container_down{
+  position: fixed;
+  bottom: 0rpx;
+  padding: 20rpx;
+  height: 200rpx;
+  /* background-color: rgb(300, 300, 300); */
+  width: 100%;
+  border: 1rpx solid rgba(214, 147, 58, 0.842);
+  display: flex;
+  justify-content: space-between;
+}
+
+.container2 {
+  display: grid;
+  border: 1rpx solid rgba(214, 147, 58, 0.842);
+  padding:20rpx;
+  border-radius: 30rpx;
+}
+
+.container2_1,
+.container2_2,
+.container2_3,
+.container2_4{
+  display: flex;
+  align-items: center; /* 水平居中 */
+}
+
+
+
+
+.like_empty,
+.like_full,
+.collect_empty,
+.collect_full{
+  width: 90rpx; /* 根据需要调整图标大小 */
+  height: 90rpx; /* 根据需要调整图标大小 */
+  /* margin-bottom: 10rpx; 图标和文字之间的间距 */
+  overflow: hidden;
+  margin-left: 15rpx;
+}
+
+.like_word,
+.collect_word{
+  color: rgb(90, 67, 67);
+  padding-left: 20rpx;
+}
+
+.container3_1{
+  display: flex;
+  padding-right: 30rpx;
+  padding-top: 20rpx;
+}
+
+.reprint_word{
+  font-size: 25rpx;
+}
+
+.reprint_photo{
+  height: 150rpx;
+  width: 150rpx;
+  margin: 0 auto;
+}
+
+.question{
+  height: 30rpx;
+  width: 30rpx;
+}
+
+
+
+
+
+.comment {
+  background-color: white;
+  padding: 20rpx;
+  width: 60%;
+  border-radius: 60rpx;
+  border: 1rpx solid rgba(214, 147, 58, 0.842);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 100%;
+  padding: 60rpx;
+  padding-bottom: 100rpx;
+  height: 300rpx;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  animation: slideUp 0.3s ease-out;
+}
+
+
+.confirm1{
+  color: white;
+  background-color: rgba(214, 147, 58, 0.842);
+  padding: 30rpx;
+  float: right;
+  border-radius: 30rpx;
+  margin-bottom: 20px; /* 增加的属性 */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* 父容器 */
+.container3_1_1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* 垂直居中 */
+}
+
+/* mine 视图 */
+.mine {
+  background-color: burlywood;
+  color: white;
+  border-radius: 30rpx;
+  padding: 20rpx;
+  margin-right: 30rpx;
+}

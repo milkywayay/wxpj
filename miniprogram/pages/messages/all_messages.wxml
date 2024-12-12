@@ -1,0 +1,26 @@
+<view class="container_search">
+  <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/问号.png" mode="aspectFill" class="attention" bind:tap="attention" />
+  <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/messagePhoto/消息.png" mode="aspectFill" class="attention" bind:tap="remind" />
+  <input class='search_input' bindinput='search_input' type="digit" placeholder='输入手机号以聊天' />
+  <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/shopping/搜索.png" class='search_photo' bindtap='search' />
+</view>
+
+<view class="container1">
+  <view class="messages" wx:for="{{messages}}" wx:key="index" class="messages" bind:tap="go_to_talk" data-p="{{item}}">
+    <view class="container2">
+      <image src="{{item.avater}}" mode="aspectFill" class="avater" />
+      <view class="container3">
+        <view class="container4">
+          <view class="nickName">{{item.nickName}}</view>
+          <view class="message" wx:if="{{item.message}}">{{item.message}}</view>
+          <view class="message" wx:else>[影像]</view>
+        </view>
+        <!-- 新的容器，用来包裹 time 和 unReads -->
+        <view class="time_unReads_container">
+          <view class="time">{{item.time}}</view>
+          <view class="unReads" wx:if="{{item.unReads>0}}">{{item.unReads}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

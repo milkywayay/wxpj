@@ -1,0 +1,16 @@
+.confirm{
+  background-color:rgba(214, 147, 58, 0.842);
+  color: white;
+  padding:30rpx;
+  font-weight: bolder;
+  font-size: 45rpx;
+  margin: 600rpx auto 0;
+  text-align: center;
+  width: 300rpx;
+  border-radius: 30rpx;
+}
+
+.confirm:active{
+  background-color:rgb(175, 90, 104) ;
+}
+

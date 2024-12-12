@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="address_farmatted">{{address.address_formatted}}</view>
+  <view class="container001">
+    <view class="building_house">{{address.building_house}}</view>
+    <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/shopping/大于.png" mode="aspectFill" class="change" bind:tap="change" />
+  </view>
+  <view class="container01">
+    <view class="address_nickName">{{address.address_nickName}}</view>
+    <view class="address_phoneNumber">{{address.address_phoneNumber}}</view>
+  </view>
+</view>
+
+
+<view class="container">
+  <view class="payee">{{commodity.payee}}</view>
+  <view class="container2">
+    <image class="imgurl" src="{{commodity.imgurl[0]}}" mode="aspectFill"></image>
+    <view class="container3">
+      <view class="commodity_name">{{commodity.commodity_name}}</view>
+      <view class="commodity_brief">{{commodity.commodity_brief}}</view>
+      <view class="container4">
+        <view class="money">¥{{commodity.money}}</view>
+        <view class="container5">
+          <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/shopping/subtract.png" mode="aspectFill" bind:tap="subtract" class="subtract" />
+          <input type="number" class="number" value="{{number}}" bindinput="number"></input>
+          <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/shopping/add.png" mode="aspectFill" bind:tap="add" class="add" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="container6">
+  <view class="money2">¥{{commodity.money*number}}</view>
+  <view class="confirm" bind:tap="confirm">确认并支付</view>
+</view>

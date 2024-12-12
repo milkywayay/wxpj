@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="container1">
+    <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/发布任务.png" mode="aspectFill" class="photo" bindtap="issue" />
+    <view class="lssue" bind:tap="lssue">发布任务</view>
+  </view>
+
+  <view class="container1">
+    <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/历史发布.png" mode="aspectFill" class="photo" bind:tap="history" />
+    <view class="lssue" bind:tap="history">历史发布</view>
+  </view>
+</view>

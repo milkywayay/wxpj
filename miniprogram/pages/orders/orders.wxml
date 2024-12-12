@@ -1,0 +1,146 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <!-- 头部导航栏 -->
+
+
+  <!-- 二级导航栏 -->
+  <view class="secondary-nav">
+    <view class="nav-item {{activeTab == 0 ? 'active' : ''}}" bindtap="onTabClick" data-index="0">全部</view>
+    <view class="nav-item {{activeTab == 1 ? 'active' : ''}}" bindtap="onTabClick" data-index="1">待付款</view>
+    <view class="nav-item {{activeTab == 2 ? 'active' : ''}}" bindtap="onTabClick" data-index="2">待发货</view>
+    <view class="nav-item {{activeTab == 3 ? 'active' : ''}}" bindtap="onTabClick" data-index="3">待收货</view>
+    <view class="nav-item {{activeTab == 4 ? 'active' : ''}}" bindtap="onTabClick" data-index="4">已完成</view>
+  </view>
+
+  <view class="main-content">
+    <!-- 全部 -->
+    <block wx:if="{{activeTab == 0}}">
+      <view class="all" wx:for="{{getData}}" wx:key="index" bind:tap="detail" data-id="{{item}}">
+        <movable-area class="moveArea">
+          <movable-view class="movableView" direction="horizontal" inertia="{{true}}" out-of-bounds="{{true}}">
+            <view class="box_item">
+              <view class="order-item">
+                <image class='photo' src='{{item.photo}}'></image>
+                <view class="details">
+                  <view class="payee">{{item.payee}}</view>
+                  <view class="over" wx:if="{{item.pay && item.send && item.received}}">已完成</view>
+                  <view wx:if="{{item.pay}}" class="pay_time">付款时间：{{item.pay_time}}</view>
+                  <view class="pay_time">下单时间：{{item.order_time}}</view>
+                  <view class="container01">
+                    <view class="money">¥{{item.money}}</view>
+                    <view class="number">共{{item.number}}件</view>
+                  </view>
+                  <view class="name">{{item.name}}</view>
+                  <view class="container1" wx:if="{{!item.pay}}">
+                    <view class="cancel" catch:tap="cancel" data-id="{{item}}">取消订单</view>
+                    <view class="pay" bind:tap="pay" data-p="{{item}}">前往支付</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </movable-view>
+          <view class="itemDelet" bind:tap="delete" data-id="{{item._id}}">删除</view>
+        </movable-area>
+      </view>
+    </block>
+
+    <!-- 待付款 -->
+    <block wx:if="{{activeTab == 1}}">
+      <view class="all" wx:for="{{getData}}" wx:key="index" wx:if="{{!item.pay}}">
+        <movable-area class="moveArea">
+          <movable-view class="movableView" direction="horizontal" inertia="{{true}}" out-of-bounds="{{true}}">
+            <view class="box_item">
+              <view class="order-item">
+                <image class='photo' src='{{item.photo}}'></image>
+                <view class="details">
+                  <view class="payee">{{item.payee}}</view>
+                  <view class="pay_time">下单时间：{{item.order_time}}</view>
+                  <view class="money">¥{{item.money}}</view>
+                  <view class="name">{{item.name}}</view>
+                  <view class="container1">
+                    <view class="cancel" bind:tap="cancel" data-id="{{item}}">取消订单</view>
+                    <view class="pay" bind:tap="pay" data-p="{{item}}">前往支付</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </movable-view>
+          <view class="itemDelet" bind:tap="delete" data-id="{{item._id}}">删除</view>
+        </movable-area>
+      </view>
+    </block>
+
+    <!-- 待发货 -->
+    <block wx:if="{{activeTab == 2}}">
+      <view class="all" wx:for="{{getData}}" wx:key="index" wx:if="{{item.pay && !item.send}}">
+        <movable-area class="moveArea">
+          <movable-view class="movableView" direction="horizontal" inertia="{{true}}" out-of-bounds="{{true}}">
+            <view class="box_item">
+              <view class="order-item">
+                <image class='photo' src='{{item.photo}}'></image>
+                <view class="details">
+                  <view class="payee">{{item.payee}}</view>
+                  <view class="pay_time">付款时间：{{item.pay_time}}</view>
+                  <view class="pay_time">下单时间：{{item.order_time}}</view>
+                  <view class="money">¥{{item.money}}</view>
+                  <view class="name">{{item.name}}</view>
+                </view>
+              </view>
+            </view>
+          </movable-view>
+          <view class="itemDelet" bind:tap="delete" data-id="{{item._id}}">删除</view>
+        </movable-area>
+      </view>
+    </block>
+
+    <!-- 待收货 -->
+    <block wx:if="{{activeTab == 3}}">
+      <view class="all" wx:for="{{getData}}" wx:key="index" wx:if="{{item.pay && item.send && !item.received}}">
+        <movable-area class="moveArea">
+          <movable-view class="movableView" direction="horizontal" inertia="{{true}}" out-of-bounds="{{true}}">
+            <view class="box_item">
+              <view class="order-item">
+                <image class='photo' src='{{item.photo}}'></image>
+                <view class="details">
+                  <view class="payee">{{item.payee}}</view>
+                  <view class="pay_time">付款时间：{{item.pay_time}}</view>
+                  <view class="pay_time">下单时间：{{item.order_time}}</view>
+                  <view class="money">¥{{item.money}}</view>
+                  <view class="name">{{item.name}}</view>
+                  <view class="go_received" bind:tap="received" data-id="{{item}}">确认收货</view>
+                </view>
+              </view>
+            </view>
+          </movable-view>
+          <view class="itemDelet" bind:tap="delete" data-id="{{item._id}}">删除</view>
+        </movable-area>
+      </view>
+    </block>
+
+    <!-- 已完成 -->
+    <block wx:if="{{activeTab == 4}}">
+      <view class="all" wx:for="{{getData}}" wx:key="index" wx:if="{{item.pay && item.send && item.received}}">
+        <movable-area class="moveArea">
+          <movable-view class="movableView" direction="horizontal" inertia="{{true}}" out-of-bounds="{{true}}">
+            <view class="box_item">
+              <view class="order-item">
+                <image class='photo' src='{{item.photo}}'></image>
+                <view class="details">
+                  <view class="container2">
+                    <view class="payee">{{item.payee}}</view>
+                    <view class="received">已完成</view>
+                  </view>
+                  <view class="pay_time">付款时间：{{item.pay_time}}</view>
+                  <view class="pay_time">下单时间：{{item.order_time}}</view>
+                  <view class="money">¥{{item.money}}</view>
+                  <view class="name">{{item.name}}</view>
+                </view>
+              </view>
+            </view>
+          </movable-view>
+          <view class="itemDelet" bind:tap="delete" data-id="{{item._id}}">删除</view>
+        </movable-area>
+      </view>
+    </block>
+  </view>
+</view>

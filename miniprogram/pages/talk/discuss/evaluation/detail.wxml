@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="heading">{{info.heading}}</view>
+  <view class="container1">
+    <view class="container1_1">
+      <image class="avater" src='{{info.avater}}'></image>
+      <view class="container1_1_1">
+        <view class="nickName">{{info.nickName}}</view>
+        <view class="time">{{info.time}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="body">{{info.body}}</view>
+  <view wx:for="{{[0,1,2]}}" wx:key="I" wx:for-item="I">
+    <view style="flex-direction:row;display:flex;">
+      <view wx:for="{{info.discuss_photo}}" wx:key="index" wx:for-index="index" wx:for-item="photo" bind:tap="viewFull" data-photo="{{photo}}">
+        <view wx:if="{{index >= I * 3 && index < 3 * (I + 1)}}" class="flex-item">
+          <view class="photo-container">
+            <image class="discuss_photo" src="{{photo}}" style="width: 100px; height: 100px; margin: 1px;" mode="aspectFill"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+<view class="container_down">
+<view class="cancel" bind:tap="cancel">取消转载</view>
+<view class="submit" bind:tap="submit">提交凭证</view>
+<!-- <view class="mySubmit" bind:tap="mySubmit">已交凭证</view> -->
+</view>

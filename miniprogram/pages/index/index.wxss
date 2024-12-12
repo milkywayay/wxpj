@@ -1,0 +1,94 @@
+.topimg{
+  margin-left: 200rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+
+.mainbtn{
+  margin-top: 72rpx;
+  height: 96rpx;
+  width: 100% !important;
+  line-height: 96rpx;
+  border-radius: 8rpx;
+  font-size: 34rpx;
+  padding: 0;
+  color: #FFFFFF;
+  background: var(--mb-color);
+}
+.mainbtn:active{
+  background: var(--zb-color);
+}
+
+/* 容器样式 */
+.container {
+  display: flex;
+  justify-content: space-around; /* 使每个整体均匀分布 */
+  align-items: center;
+  padding: 40rpx;
+  /* background-color: #f5f5f5; */
+}
+
+/* 子容器样式，确保图标和文字垂直排列 */
+.container1, 
+.container2 ,
+.container3,
+.container4,
+.container5{
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 水平居中 */
+}
+
+/* 图片样式 */
+.school_sever_photo,
+.judge_photo,
+.booking_photo,
+.tea_photo,
+.shopping_photo{
+  width: 90rpx; /* 根据需要调整图标大小 */
+  height: 90rpx; /* 根据需要调整图标大小 */
+  margin-bottom: 10rpx; /* 图标和文字之间的间距 */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.school_sever_photo:active,
+.judge_photo:active,
+.booking_photo:active,
+.tea_photo:active,
+.shopping_photo:active{
+  transition: transform 0.5s ease;
+  transform: scale(3) rotate(10000deg); /* 同时进行缩放和旋转 */
+}
+
+/* 文字样式 */
+.school_sever_word,
+.judge_word,
+.booking_word,
+.tea_word,
+.shopping_word{
+  font-size: 27rpx;
+  color: #333;
+  overflow: hidden;
+}
+.shopping_photo{
+  width: 110rpx;
+  height: 110rpx;
+}
+
+.shopping_word{
+  color:white;
+  background-color:rgba(214, 147, 58, 0.842) ;
+  border-radius: 30rpx;
+  padding:10rpx;
+}
+
+
+.big_photo{
+width: 850rpx;
+height: 1050rpx;
+margin-left: -60rpx;
+overflow: hidden;
+}
+

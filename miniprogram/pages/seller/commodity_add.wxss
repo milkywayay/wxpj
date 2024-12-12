@@ -1,0 +1,57 @@
+.container {
+  padding: 20rpx;
+}
+
+.commodity_name_word,
+.commodity_brief_word,
+.money_word {
+  font-size: 36rpx;
+}
+
+.commodity_name_input,
+.commodity_brief_input,
+.money_input {
+  margin: 30rpx;
+  height: 90rpx;
+  border: 6rpx solid rgba(214, 147, 58, 0.842);
+  border-radius: 15rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.commodity_brief_input {
+  height: 300rpx;
+  width: 86%;
+  padding: 20rpx
+}
+
+.money_input {
+  width: 30%;
+}
+
+.container1 {
+  background-color: rgba(214, 147, 58, 0.842);
+  margin-left: 60rpx;
+  width: 600rpx;
+  padding:30rpx;
+  border-radius: 30rpx;
+}
+
+
+.photo {
+  position: relative;
+  height: 200rpx;
+  width: 200rpx;
+  left: 30rpx;
+}
+
+.confirm {
+  position: relative;
+  text-align: center;
+  background-color: rgba(214, 147, 58, 0.842);
+  color: white;
+  padding: 20rpx;
+  border-radius: 30rpx;
+  margin-top: 200rpx;
+  bottom: 100rpx;
+}

@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="title">任务名称：{{lssue.title}}</view>
+  <view class="nickName">发布人：{{lssue.nickName}}</view>
+  <view class="word">要求：</view>
+  <view class="request">{{lssue.request}}</view>
+  <view class="field" wx:for="{{lssue.field}}" wx:key="index">
+  <view class="platform">{{item.platform}}</view>
+  <textarea class="input" placeholder="添加{{item.platform}}" bindinput="input" value="{{item.value}}" data-index="{{index}}"></textarea>
+  <button class="upload-btn" bindtap="uploadFile" data-index="{{index}}">上传文件</button>
+  <view wx:if="{{item.filePath}}">
+    <text>已上传文件：</text>
+    <text class="file-link">{{item.filePath}}</text>
+  </view>
+</view>
+</view>
+
+<view class="confirm" bind:tap="confirm">保存并提交</view>

@@ -1,0 +1,13 @@
+<view class="allData" wx:for="{{allData}}" wx:key="index">
+  <view class="name">商品:{{item.name}}</view>
+  <view class="number">数量：{{item.number}}</view>
+  <view class="pay_time">付款时间：{{item.pay_time}}</view>
+  <view class="container">购买者信息</view>
+  <view class="address_formatted">省市区：{{item.address_formatted}}</view>
+  <view class="building_house">{{item.building_house}}</view>
+  <view class="gender" wx:if="{{item.gender==='female'}}">性别：女</view>
+  <view class="gender" wx:else>性别：男</view>
+  <view class="address_nickName">昵称：{{item.address_nickName}}</view>
+  <view class="address_phoneNumber">联系方式：{{item.address_phoneNumber}}</view>
+  <view class="send" bind:tap="send" data-s='{{item}}'>一键发货</view>
+</view>

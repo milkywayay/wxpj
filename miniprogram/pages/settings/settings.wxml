@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="address_manage" bind:tap="address_manage">地址管理</view>
+
+  <view class="seller" wx:if="{{seller}}" bind:tap="seller_entrance">商家入口</view>
+  <view class="seller" wx:if="{{!seller}}" bind:tap="be_seller">成为商家</view>
+
+  <view class="manager" wx:if="{{manager}}" bind:tap="manager_entrance">管理员入口</view>
+  <view class="manager" wx:if="{{!manager}}" bind:tap="be_manager">成为管理员</view>
+
+  <view class="log_out" wx:if="{{log}}" bind:tap="log_out">退出登录</view>
+  <button open-type="getPhoneNumber" bindgetphonenumber="login" class="login" style="width: 725rpx;" wx:if="{{!log}}">一键登录</button>
+</view>

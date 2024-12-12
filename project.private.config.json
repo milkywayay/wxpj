@@ -1,0 +1,105 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "company",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/messages/wait",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/seller/commodity",
+          "pathName": "pages/seller/commodity",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/seller/commodity_add",
+          "pathName": "pages/seller/commodity_add",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/talk/discuss/post",
+          "pathName": "pages/talk/discuss/post",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/booking/booking",
+          "pathName": "pages/booking/booking",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/manager/manager_center",
+          "pathName": "pages/manager/manager_center",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/talk/discuss/like",
+          "pathName": "pages/talk/discuss/like",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/talk/add_discuss",
+          "pathName": "pages/talk/add_discuss",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/seller/seller_center",
+          "pathName": "pages/seller/seller_center",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/judge/judge",
+          "pathName": "pages/judge/judge",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/add/add_location",
+          "pathName": "pages/add/add_location",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/map/address_library",
+          "pathName": "pages/map/address_library",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/add/addParcel",
+          "pathName": "pages/add/addParcel",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

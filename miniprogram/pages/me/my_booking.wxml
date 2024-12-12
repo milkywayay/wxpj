@@ -1,0 +1,33 @@
+<view class="secondary-nav">
+  <view class="nav-item {{activeTab == 0 ? 'active' : ''}}" bindtap="onTabClick" data-index="0">待前往</view>
+  <view class="nav-item {{activeTab == 1 ? 'active' : ''}}" bindtap="onTabClick" data-index="1">已完成</view>
+</view>
+
+
+<block wx:if="{{activeTab == 0}}">
+  <view class="container">
+    <view class="allData" wx:for="{{waitData}}" wx:key="index">
+      <view class="nickName">预约人:{{item.nickName}}</view>
+      <view class="date">预约时间:{{item.date}}</view>
+      <view class="container1">
+        <view class="type">预约类型:{{item.type}}</view>
+        <view class="cancel" bind:tap="cancel" data-c='{{item}}'>取消预约</view>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+<block wx:if="{{activeTab == 1}}">
+  <view class="container">
+    <view class="allData" wx:for="{{haveData}}" wx:key="index">
+      <view class="nickName">预约人:{{item.nickName}}</view>
+      <view class="date">预约时间:{{item.date}}</view>
+      <view class="container1">
+        <view class="type">预约类型:{{item.type}}</view>
+      </view>
+    </view>
+  </view>
+</block>
+
+

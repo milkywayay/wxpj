@@ -1,0 +1,93 @@
+
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.tab-item {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.active{
+  color: #2a68b9;
+  font-weight: bold;
+}
+
+.content {
+  padding: 10px;
+  display: none;  /* 隐藏所有内容 */
+}
+
+.content.active {
+  display: block;  /* 显示当前激活的 tab 内容 */
+}
+
+
+.add-parcel-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(214, 147, 58, 0.842);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.parcel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.parcelValue,
+.addressParcel,
+.addressMe,
+.cencel,
+.getOrders,
+.nickName{
+  margin-top: 5px;
+}
+
+.parcelValue {
+  font-size: 16px;
+  color: #333;
+}
+.addressParcel,
+.addressMe,
+.nickName,
+.out_trade_no{
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.price {
+  font-size: 18px;
+  color: #e44d26; 
+}
+
+.time {
+  font-size: 12px;
+  color: #999;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+
+.cencel {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+

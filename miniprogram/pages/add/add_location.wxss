@@ -1,0 +1,128 @@
+/* 容器样式 */
+.container {
+  padding: 20rpx;
+  background-color: #f8f8f8;
+}
+
+/* 标题栏样式 */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f74a49;
+  padding: 20rpx;
+  color: #fff;
+}
+
+.back-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+/* 表单样式 */
+.form-section {
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-top: 20rpx;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.value {
+  flex: 2;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.input {
+  flex: 2;
+  font-size: 32rpx;
+  color: #333;
+  padding: 0 10rpx;
+  border: none;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+}
+
+.radio-label {
+  font-size: 32rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  flex: 0;
+}
+
+.tags {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tag {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  padding: 10rpx 20rpx;
+  font-size: 32rpx;
+}
+
+/* 按钮组样式 */
+.button-group {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.save-button, .delete-button {
+  flex: 1;
+  margin: 0 10rpx;
+  padding: 20rpx;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.save-button {
+  margin-top: 60rpx;
+  background-color: rgba(214, 147, 58, 0.842);
+  color: #fff;
+}
+
+.save-button:active{
+  background-color: rgb(40, 87, 71);
+}
+
+.delete-button {
+  background-color: #fff;
+  color: rgba(214, 147, 58, 0.842);
+  border: 1px solid rgba(214, 147, 58, 0.842);
+}

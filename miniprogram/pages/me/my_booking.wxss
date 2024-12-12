@@ -1,0 +1,47 @@
+.allData {
+  font-size: 30rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.container {
+  background-color: #1f090918;
+  padding: 30rpx;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;  */
+}
+
+.cancel {
+  background-color: rgba(214, 147, 58, 0.842);
+  padding: 15rpx;
+  color: white;
+  border-radius: 15rpx;
+}
+
+
+.secondary-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav-item {
+  padding: 15rpx 0;
+  flex: 1;
+  text-align: center;
+  color: #333;
+  cursor: pointer; /* 确保点击手势 */
+}
+
+.nav-item.active {
+  color: #1cbbb4;
+  border-bottom: 2rpx solid #1cbbb4;
+  display:block;
+}

@@ -1,0 +1,75 @@
+.pay {
+  position: fixed;
+  right: 20rpx; 
+  bottom: 100rpx; 
+  background-color: rgba(214, 147, 58, 0.842);
+  padding: 30rpx; 
+  color: white;
+  border-radius: 30rpx;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+}
+
+.location_photo{
+  height: 35rpx;
+  width: 35rpx;
+}
+
+.address_formatted{
+  color: rgb(179, 148, 83);
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 单选标签样式 */
+.radio-label {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 单选框样式 */
+.radio-group radio {
+  margin-right: 5px;
+}
+
+.container_sex {
+  display: flex;
+  flex-direction: column;
+  /* padding: 30rpx; */
+  background-color: #f5f5f5;
+}
+
+.code_word,
+.address_detail_word{
+  font-size: 40rpx;
+}
+
+.code,
+.address_detail{
+  padding: 30rpx;
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+
+
+.container1{
+  margin-top: 30rpx;
+  background-color: #f5f5f5;
+  padding: 15rpx;
+}
+
+.container_sex{
+  margin-top: 30rpx;
+}
+

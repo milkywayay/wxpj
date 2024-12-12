@@ -1,0 +1,75 @@
+<view class="container">
+  <view class="heading">{{info.heading}}</view>
+  <view class="container1">
+    <view class="container1_1">
+      <image class="avater" mode="aspectFill" src='{{info.avater}}' bind:tap="message"></image>
+      <view class="container1_1_1">
+        <view class="nickName">{{info.nickName}}</view>
+        <view class="time">{{info.time}}</view>
+      </view>
+    </view>
+    <view class="attention1" bind:tap="attention1" wx:if="{{!attention}}">+关注</view>
+    <view class="attention2" bind:tap="attention2" wx:if="{{attention}}">已关注</view>
+  </view>
+  <view class="body">{{info.body}}</view>
+  <view wx:for="{{[0,1,2]}}" wx:key="I" wx:for-item="I">
+    <view style="flex-direction:row;display:flex;">
+      <view wx:for="{{info.discuss_photo}}" wx:key="index" wx:for-index="index" wx:for-item="photo" bind:tap="viewFull" data-photo="{{photo}}">
+        <view wx:if="{{index >= I * 3 && index < 3 * (I + 1)}}" class="flex-item">
+          <view class="photo-container">
+            <image class="discuss_photo" src="{{photo}}" style="width: 100px; height: 100px; margin: 1px;" mode="aspectFill"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+<view class="container_down">
+  <view class="container2">
+    <!-- <view bindtap="showModal" class="comment">写个评论吧～</view> -->
+
+    <!-- 喜欢 -->
+    <view class="container2_1" wx:if="{{!like}}">
+      <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/爱心虚.png" class='like_empty' bind:tap="like1" />
+      <view class="like_word">认为该广告很有创意</view>
+    </view>
+    <view class="container2_2" wx:if="{{like}}">
+      <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/爱心实.png" class='like_full' bind:tap="like2" />
+      <view class="like_word">认为该广告很有创意</view>
+    </view>
+    <!-- 收藏 -->
+    <view class="container2_3" wx:if="{{!collect}}">
+      <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/收藏虚.png" class="collect_empty" bind:tap="collect1" />
+      <view class="collect_word">收藏</view>
+    </view>
+    <view class="container2_4" wx:if="{{collect}}">
+      <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/收藏实.png" class="collect_full" bind:tap="collect2" />
+      <view class="collect_word">收藏</view>
+    </view>
+    <!-- <view class="modal" wx:if="{{showModal}}" bindtap="hideModal">
+    <view class="modal-content" catchtap="preventHide">
+      <textarea placeholder="请输入内容" bindinput="handleInput" class="handleInput" maxlength="-1"></textarea>
+      <view bindtap="confirm1" class="confirm1">确定</view>
+    </view>
+  </view> -->
+  </view>
+  <!-- 转载 -->
+
+  <view class="container3">
+    <view class="container3_1">
+      <view class="reprint_word" bind:tap="reprint">转载并获取可能的佣金</view>
+      <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/问号.png" class='question' bind:tap="question" />
+    </view>
+    <view class="container3_1_1">
+    <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/转载.png" class='reprint_photo' bind:tap="reprint"/>
+    <view class="mine" wx:if="{{mine}}" bind:tap="mine" >查看转载</view>
+    </view>
+  </view>
+</view>

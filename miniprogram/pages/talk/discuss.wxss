@@ -1,0 +1,180 @@
+.container {
+  padding: 20rpx;
+  margin-top:200rpx;
+}
+
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300rpx; /* 可调整高度 */
+  z-index: 999; /* 确保导航栏在最上层 */
+  display: flex;
+  justify-content: center; /* 居中标题 */
+  align-items: center; /* 垂直居中 */
+  color: rgb(222, 226, 230); /* 默认文字颜色 */
+  font-size: 40rpx;
+  font-weight: bold;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.99); /* 文字阴影增强可读性 */
+  mix-blend-mode: difference; /* 根据背景动态调整文字颜色 */
+}
+
+
+
+
+.add_photo {
+  width: 90rpx;
+  height: 90rpx;
+  transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+.add_photo:active{
+  transform: scale(20.0); /* 点击时放大 */
+}
+
+
+
+.container_add_photo {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+
+.heading {
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+
+
+
+
+
+.container1 {
+  border-bottom: 1rpx solid rgba(214, 147, 58, 0.842);
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+  padding-top: 30rpx;
+}
+
+/* 
+.container1_1{
+  display: grid;
+} */
+
+.container1_1_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.time {
+  color: rgb(143, 131, 131);
+  font-size: 90%;
+}
+
+
+.nickName {
+  color: rgb(143, 131, 131);
+  font-size: 90%;
+}
+
+
+.saturn-background{
+  width: 100%;
+  height: 100vh;
+  background-image:
+    radial-gradient(closest-side, rgba(255, 99, 71, 0.3), rgba(255, 99, 71, 0)),
+    radial-gradient(closest-side, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0)),
+    radial-gradient(closest-side, rgba(255, 165, 0, 0.3), rgba(255, 165, 0, 0)),
+    radial-gradient(closest-side, rgba(255, 192, 203, 0.3), rgba(255, 192, 203, 0)),
+    radial-gradient(closest-side, rgba(255, 69, 0, 0.3), rgba(255, 69, 0, 0));
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: 5s sunset-movement linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes sunset-movement {
+  0%,
+  100% {
+    background-size:
+      130vmax 130vmax,
+      80vmax 80vmax,
+      90vmax 90vmax,
+      110vmax 110vmax,
+      90vmax 90vmax;
+    background-position:
+      -80vmax -80vmax,
+      60vmax -30vmax,
+      10vmax 10vmax,
+      -30vmax -10vmax,
+      50vmax 50vmax;
+  }
+
+  25% {
+    background-size:
+      100vmax 100vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      60vmax 60vmax;
+    background-position:
+      -60vmax -90vmax,
+      50vmax -40vmax,
+      0vmax -20vmax,
+      -40vmax -20vmax,
+      40vmax 60vmax;
+  }
+
+  50% {
+    background-size:
+      80vmax 80vmax,
+      110vmax 110vmax,
+      80vmax 80vmax,
+      60vmax 60vmax,
+      80vmax 80vmax;
+    background-position:
+      -50vmax -70vmax,
+      40vmax -30vmax,
+      10vmax 0vmax,
+      20vmax 10vmax,
+      30vmax 70vmax;
+  }
+
+  75% {
+    background-size:
+      90vmax 90vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      70vmax 70vmax;
+    background-position:
+      -50vmax -40vmax,
+      50vmax -30vmax,
+      20vmax 0vmax,
+      -10vmax 10vmax,
+      40vmax 60vmax;
+  }
+}

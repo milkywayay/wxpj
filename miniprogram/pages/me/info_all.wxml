@@ -1,0 +1,104 @@
+<view class="saturn-background">
+<view class="container_head">
+  <image class="avater" bind:tap="me" src='{{avater}}' mode="aspectFill" ></image>
+  <view class="nickName" wx:if="{{!login}}" >未登录，请点击设置登录</view>
+
+    <view class="nickName" bind:tap="me">{{nickName}}</view>
+
+  <image class='settings' bind:tap="settings" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/设置.png'></image>
+</view>
+
+<!-- 收藏 -->
+<view class="container0">
+  <view class="container">
+    <!-- <view class="container1">
+      <image class="like_photo" bind:tap="like" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/收藏.png"></image>
+      <view class="like_word" bind:tap="like">收藏</view>
+    </view> -->
+
+    <!-- 订单 -->
+    <view class="container2">
+      <image class="orders_photo" bind:tap="orders" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/订单.png" />
+      <view class="orders_word" bind:tap="orders">订单</view>
+    </view>
+
+    <!-- 我的预约 -->
+    <view class="container3">
+      <image class="booking_photo" bind:tap="booking" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/我的预约.png' />
+      <view class="booking_word" bind:tap="booking">我的预约</view>
+    </view>
+
+    <!-- 我的评价 -->
+    <view class="container4">
+      <image class='judge_photo' bind:tap="judge" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/我的人格.png' />
+      <view class="judge_word" bind:tap="judge">我的人格</view>
+    </view>
+
+    <view class="container4">
+      <image class='judge_photo' bind:tap="attention" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/我的关注.png' />
+      <view class="judge_word" bind:tap="attention">我的关注</view>
+    </view>
+  </view>
+</view>
+
+<!-- 多寰广场 -->
+<view class="container0_square">
+  <view class="container_square">
+
+    <!-- 喜欢 -->
+    <view class="container1_square">
+      <image class="like_photo" bind:tap="like" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/喜欢.png"></image>
+      <view class="like_word" bind:tap="like">喜欢</view>
+    </view>
+
+    <!-- 收藏 -->
+    <view class="container2_square">
+      <image class="collect_photo" bind:tap="collect" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/收藏.png" />
+      <view class="collect_word" bind:tap="collect">收藏</view>
+    </view>
+
+
+    <!-- 我的帖子（广告） -->
+    <view class="container3_square">
+      <image class="post_photo" bind:tap="post" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/我的帖子.png" />
+      <view class="post_word" bind:tap="post">我的广告</view>
+    </view>
+
+
+    <!-- 我的转载（二级广告） -->
+    <view class="container4_square">
+      <image class="evaluation_photo" bind:tap="evaluation" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/我的评论.png" />
+      <view class="evaluation_word" bind:tap="evaluation">我的转载</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class="container0_square">
+  <view class="container_square">
+    <!-- 链接 -->
+
+    <!-- 多元商鋪 -->
+    <view class="container1_square">
+      <image class="like_photo" bind:tap="DuoYuan_shop" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/多元商舖系统（企业）（有所有权）.jpg"></image>
+      <view class="like_word" bind:tap="DuoHuan_square">多元商鋪</view>
+    </view>
+
+    <!-- 多寰广场 -->
+    <view class="container1_square">
+      <image class="like_photo" bind:tap="DuoHuan_square" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/多寰广场.jpg"></image>
+      <view class="like_word" bind:tap="DuoHuan_square">多寰广场</view>
+    </view>
+
+    <!-- 疆雪行 -->
+    <view class="container1_square">
+      <image class="like_photo" bind:tap="jiang" src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/疆雪行.jpg"></image>
+      <view class="like_word" bind:tap="jiang">疆雪行</view>
+    </view>
+
+
+  </view>
+</view>
+</view>

@@ -1,0 +1,33 @@
+<view class="c1" wx:if="{{!audit}}">
+<view class="address_formatted">您当前的学校：{{address_formatted}}</view>
+<view class="container">
+
+<view class="title">
+  <view class="title_word">群组名称</view>
+  <input placeholder="请输入群组名称" class="title_input" bindinput="title" maxlength="-1" />
+</view>
+
+<view class="title">
+  <view class="title_word">预计要求</view>
+  <input class="title_input" placeholder="要求1" bindinput="onInputChange" data-index="1" />
+  <input class="title_input" placeholder="要求2" bindinput="onInputChange" data-index="2" />
+  <input class="title_input" placeholder="要求3" bindinput="onInputChange" data-index="3" />
+  <input class="title_input" placeholder="要求4" bindinput="onInputChange" data-index="4" />
+  <input class="title_input" placeholder="要求5" bindinput="onInputChange" data-index="5" />
+  <input class="title_input" placeholder="要求6" bindinput="onInputChange" data-index="6" />
+  <input class="title_input" placeholder="要求7" bindinput="onInputChange" data-index="7" />
+  <input class="title_input" placeholder="要求8" bindinput="onInputChange" data-index="8" />
+  <input class="title_input" placeholder="要求9" bindinput="onInputChange" data-index="9" />
+  <view class="title_word">温馨提示：要求太多有所影响室友关系，故此处最多仅九项要求</view>
+</view>
+
+
+</view>
+
+<view class="confirm" bind:tap="confirm">提交审核，审核后自动创建</view>
+
+</view>
+<view class="c2" wx:else>
+<view class="attention">您已提交审核，可拨打18330529472询问进度</view>
+</view>
+

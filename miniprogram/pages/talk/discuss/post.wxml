@@ -1,0 +1,59 @@
+<view class="secondary-nav">
+  <view class="nav-item {{activeTab == 0 ? 'active' : ''}}" bindtap="onTabClick" data-index="0">已发布</view>
+  <view class="nav-item {{activeTab == 1 ? 'active' : ''}}" bindtap="onTabClick" data-index="1">审核中</view>
+  <view class="nav-item {{activeTab == 2 ? 'active' : ''}}" bindtap="onTabClick" data-index="2">被转载</view>
+</view>
+
+
+
+
+<view class="main-content">
+  <!-- 全部 -->
+  <block wx:if="{{activeTab == 0}}">
+    <view class="visible_data" wx:for="{{visible_data}}" wx:key="index">
+      <view class="container1" bind:tap="discuss_detail" data-d="{{item}}">
+        <view class="container1_1">
+          <view class="heading">{{item.heading}}</view>
+          <view class="container1_1_1">
+            <view class="nickName">{{item.nickName}}</view>
+            <view class="time">{{item.time}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 已完成 -->
+  <block wx:if="{{activeTab == 1}}">
+    <view class="audit_data" wx:for="{{audit_data}}" wx:key="index">
+      <view class="container1" bind:tap="discuss_detail" data-d="{{item}}">
+        <view class="container1_1">
+          <view class="heading">{{item.heading}}</view>
+          <view class="container1_1_1">
+            <view class="nickName">{{item.nickName}}</view>
+            <view class="time">{{item.time}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+
+
+<!-- 已转载 -->
+<block wx:if="{{activeTab == 2}}">
+  <view class="audit_data" wx:for="{{reprinted_data}}" wx:key="index">
+      <view class="container1" bind:tap="discuss_detail" data-d="{{item}}">
+        <view class="container1_1">
+          <view class="heading">{{item.heading}}</view>
+          <view class="container1_1_1">
+            <view class="nickName">{{item.nickName}}</view>
+            <view class="time">{{item.time}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+</block>
+
+</view>

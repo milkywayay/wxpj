@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="secondary-nav">
+    <view class="nav-item {{activeTab == 0 ? 'active' : ''}}" bindtap="onTabClick" data-index="0">关注</view>
+    <view class="nav-item {{activeTab == 1 ? 'active' : ''}}" bindtap="onTabClick" data-index="1">粉丝</view>
+    <view class="nav-item {{activeTab == 2 ? 'active' : ''}}" bindtap="onTabClick" data-index="2">申请</view>
+
+  </view>
+</view>
+
+
+<view class="main-content">
+  <view class="attentions" wx:for="{{attentions}}" wx:key="index">
+    <block wx:if="{{activeTab == 0}}">
+      <view class="container1">
+        <image src="{{item.avater}}" mode="aspectFill" class="avater" />
+        <view class="nickName">{{item.nickName}}</view>
+      </view>
+    </block>
+  </view>
+
+
+
+  <block wx:if="{{activeTab == 1}}">
+    <view class="attentions" wx:for="{{attentioneds}}" wx:key="index">
+      <view class="container1">
+        <image src="{{item.avater}}" mode="aspectFill" class="avater" />
+        <view class="nickName">{{item.nickName}}</view>
+      </view>
+    </view>
+  </block>
+
+
+
+  <block wx:if="{{activeTab == 2}}">
+    <view class="attentions" wx:for="{{attentioneds}}" wx:key="index">
+    <view class="container1">
+      <image src="{{item.avater}}" mode="aspectFill" class="avater" />
+      <view class="nickName">{{item.nickName}}</view>
+      </view>
+    </view>
+  </block>
+</view>

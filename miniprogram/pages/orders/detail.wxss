@@ -1,0 +1,59 @@
+.container{
+  background-color: #f5f5f5;
+  margin: 20rpx;
+  padding:20rpx;
+  border-radius:30rpx;
+}
+
+.container1{
+  display: flex;
+}
+
+.payee{
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 20rpx;
+}
+
+.photo{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 30rpx;
+}
+
+.name{
+  padding-left: 30rpx;
+}
+
+.money{
+  color: rgba(214, 147, 58, 0.842);
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 420rpx;
+}
+
+
+.order_time{
+  margin-top: 20rpx;
+}
+
+.pay_time{
+  margin-top: 10rpx;
+}
+
+.pay{
+  background-color:rgba(214, 147, 58, 0.842);
+  text-align: center;
+  width: 200rpx;
+  padding:20rpx;
+  color:white;
+  border-radius: 30rpx;
+  margin: 60rpx auto 0;
+}
+
+
+.pay:active{
+  background-color: rgb(122, 122, 204);
+}
+
+

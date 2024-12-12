@@ -1,0 +1,3 @@
+<input  wx:if="{{!audit}}" bindinput="nickName" placeholder="请输入店铺名称"  class="nickName" />
+<view   wx:if="{{!audit}}" class="confirm" bind:tap="confirm">提交申请</view>
+<view  class="have">您已提交申请，正在审核中</view>

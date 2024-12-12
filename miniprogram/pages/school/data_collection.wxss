@@ -1,0 +1,9 @@
+.lssues{
+  margin:30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid;
+}
+
+.nickName{
+  padding-top: 30rpx;
+}

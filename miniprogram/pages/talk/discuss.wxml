@@ -1,0 +1,24 @@
+<view class="saturn-background">
+<view class="container">
+  <view class="custom-navbar">
+  <text class="navbar-title">多寰广告</text>
+</view>
+  <view class="allData" wx:for="{{allData}}" wx:key="index">
+    <view class="container1" bind:tap="discuss_detail" data-d="{{item}}">
+      <view class="container1_1">
+        <view class="heading">{{item.heading}}</view>
+        <view class="container1_1_1">
+          <view class="nickName">{{item.nickName}}</view>
+          <view class="time">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="container_add_photo">
+    <image src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/加号.png' bind:tap="add" class="add_photo" />
+  </view>
+</view>
+</view>
+

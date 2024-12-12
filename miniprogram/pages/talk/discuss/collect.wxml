@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="collectData" wx:for="{{collectData}}" wx:key="index">
+    <view class="container1" bind:tap="discuss_detail" data-d="{{item}}">
+      <view class="container1_1">
+        <view class="heading">{{item.heading}}</view>
+        <view class="container1_1_1">
+          <view class="nickName">{{item.nickName}}</view>
+          <view class="time">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

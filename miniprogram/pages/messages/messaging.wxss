@@ -1,0 +1,174 @@
+
+.chat-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  height: calc(100vh - 200rpx); 
+  overflow: auto;
+}
+
+.message-container{
+  display:grid;
+  flex-direction: column;
+
+}
+.time_right{
+  margin-left:auto;
+  padding-right:20rpx;
+  font-weight: 300;
+}
+
+.time_left{
+  margin-left:20rpx;
+  font-weight: 300;
+}
+
+
+/* 消息框的布局 */
+.message-box {
+  margin: 20rpx 0;
+  display: flex;
+  justify-content:space-between;
+  padding:10rpx 20rpx;
+  align-items: center; /* 保持头像与消息在同一水平线 */
+}
+
+.time{
+  font-size: small;
+  font-weight:300;
+}
+
+
+.message {
+  max-width: 60%;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+  word-wrap: break-word;
+  margin:10rpx 20rpx
+}
+
+
+/* 右侧消息（自己的消息） */
+.message.right {
+  background-color: #98FB98;
+  margin-left: auto;
+}
+
+/* 左侧消息（对方的消息） */
+.message.left {
+  background-color: #f0f0f0;
+  margin-right: auto;
+}
+
+/* 底部输入框区域 */
+.container_send {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-top: 1rpx solid #d1d1d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 输入框和发送按钮的容器 */
+.container_send2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 60rpx;
+  width: 100%;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+/* 输入框样式 */
+.message_input {
+  border: 1rpx solid rgba(214, 147, 58, 0.842);
+  border-radius: 30rpx;
+  height: 80rpx;
+  flex: 1;
+  margin-right: 10rpx;
+  padding: 0 20rpx;
+}
+
+/* 发送按钮样式 */
+.send {
+  background-color: #d6913a;
+  color: #fff;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.send:active {
+  background-color: rgb(235, 223, 208);
+}
+
+
+
+/* .chat-container.scrolling::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.chat-container.scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 10px;
+}
+
+.chat-container.scrolling::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+} */
+
+
+/* ::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+} */
+
+
+
+
+/* 滚动时显示的滚动条样式 */
+.scrolling::-webkit-scrollbar {
+  width: 20rpx;
+}
+
+
+.scrolling::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20rpx;
+}
+
+
+.scrolling::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.avater_send,
+.avater_receive{
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 10rpx;
+}
+
+.photo{
+  border-radius: 10rpx;
+}
+
+
+
+

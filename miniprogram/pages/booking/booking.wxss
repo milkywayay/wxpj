@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100∞;
+  height: 900rpx;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-bottom: 1px solid gray;
+}
+
+.cell {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid gray;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.choose,
+.date,
+.office_name{
+  text-align: center;
+  font-size: 40rpx;
+  background-color: rgba(214, 147, 58, 0.842);
+  width: 80%;
+  color:white;
+  border-radius: 80rpx;
+  margin: 100rpx auto 0; /* 上边距30rpx，水平居中，底边距0 */
+  padding: 10rpx;
+}
+
+.office_name{
+  padding: 20rpx;
+}
+
+.confirm{
+  text-align: center;
+  font-size: 40rpx;
+  background-color: rgba(214, 147, 58, 0.842);
+  width: 200rpx;
+  color:white;
+  border-radius: 30rpx;
+  padding: 10rpx;
+  margin-top: 100rpx;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+
+.color-indicator {
+  display: flex;
+  align-items: center;
+  margin: 20rpx;
+}
+
+.indicator {
+  width: 40rpx; /* 方块的宽度 */
+  height: 40rpx; /* 方块的高度 */
+  border-radius: 10rpx;
+  margin-right: 10rpx; /* 方块和文字之间的间距 */
+}
+
+.label {
+  font-size: 28rpx;
+  margin-right: 20rpx; /* 两组方块和文字之间的间距 */
+}
+
+.add_office{
+margin: 20rpx;
+background-color: rgba(214, 147, 58, 0.842);
+color:white;
+padding:20rpx;
+border-radius: 30rpx;
+}
+
+
+.container1{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+

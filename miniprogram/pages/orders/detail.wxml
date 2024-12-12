@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="payee">{{order.payee}}</view>
+  <view class="container1">
+    <image src="{{order.photo}}" mode="aspectFill" class="photo" />
+    <view class="name">{{order.name}}</view>
+  </view>
+  <view class="money">应付款： ¥{{order.money}}</view>
+  <view class="money" wx:if="{{order.pay}}">实付款： ¥{{order.money}}</view>
+  <view class="order_time">下单时间：{{order.order_time}}</view>
+  <view class="address">收货地址：{{order.address_formatted}}{{order.building_house}}</view>
+  <view class="address_nickName">收货人：{{order.address_nickName}}{{order.address_phoneNumber}}</view>
+  <view class="pay_time" wx:if="{{order.pay}}">付款时间：{{order.pay_time}}</view>
+  <view class="pay" wx:if="{{!order.pay}}" data-p="{{order}}" bind:tap="pay">支付</view>
+</view>

@@ -1,0 +1,30 @@
+<view class="container">
+  <image src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/school_server/地址.png' class='location_photo' bind:tap="location"></image>
+  <view class="address_formatted" bind:tap="location">{{address_formatted}} </view>
+</view>
+
+<view class="container1">
+<view class="code">
+<view class="code_word">取货地址及号码</view>
+<input class="code_input"  bindinput="code" placeholder="取货楼号+取货码"/>
+</view>
+<view class="address_detail">
+<view class="address_detail_word">详细地址</view>
+<input class="address_detail_input" bindinput='address_detail' placeholder="收获楼号+楼层+门牌号"></input>
+</view>
+<view class="container_sex">
+  <view class="title">请选择性别</view>
+  <radio-group class="radio-group" bindchange="onGenderChange">
+    <label class="radio-label">
+      <radio value="male" checked="{{gender === 'male'}}" /> 男
+    </label>
+    <label class="radio-label">
+      <radio value="female" checked="{{gender === 'female'}}" /> 女
+    </label>
+  </radio-group>
+</view>
+
+</view>
+
+<view class="price">统一价格：¥2</view>
+<view class="pay" bind:tap="pay">确认支付</view>

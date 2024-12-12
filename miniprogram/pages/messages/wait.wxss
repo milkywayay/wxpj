@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between; 
+}
+
+
+.container1 {
+  display: flex;
+  align-items: center; /* 让头像和文字垂直居中 */
+}
+
+.container2{
+  margin-top:300rpx;
+  display: flex;
+  align-items: center; 
+}
+
+.avater_receive, .avater_send {
+  height: 80rpx;
+  width: 80rpx;
+  margin: 0 20rpx; /* 给图片添加左右间距 */
+}
+
+.noSend {
+  background-color: rgba(214, 147, 58, 0.842);
+  color: white;
+  padding: 20rpx;
+  border-radius: 30rpx ; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.attention, .attentioned {
+  background-color: rgba(214, 147, 58, 0.842);
+  color: white;
+  padding: 30rpx;
+  border-radius: 30rpx;
+}
+
+.attention {
+  margin-left: 20rpx; /* 让 +关注 按钮靠右 */
+}
+
+.attentioned {
+  margin-right: 20rpx; /* 让 请求关注自己 按钮靠左 */
+}

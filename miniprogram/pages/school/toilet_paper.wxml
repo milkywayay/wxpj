@@ -1,0 +1,23 @@
+<view class="address_formatted">{{address_formatted}}</view>
+
+<view class="container">
+  <view class="address_detail">精确地址</view>
+  <input class="address_detail_input" placeholder="送纸侠将会根据您填写的地址寻找您" bindinput="address_detail"  />
+  <view class="container_sex">
+  <view class="title">请选择性别</view>
+  <radio-group class="radio-group" bindchange="onGenderChange">
+    <label class="radio-label">
+      <radio value="male" checked="{{gender === 'male'}}"/> 男
+    </label>
+    <label class="radio-label">
+      <radio value="female" checked="{{gender === 'female'}}"/> 女
+    </label>
+  </radio-group>
+</view>
+
+
+</view>
+
+
+
+<button class="order" bind:tap="order">下单</button>

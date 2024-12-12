@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="attention">注意⚠️：请确认办公室工位为六位</view>
+  <view class="container1">
+  <view class="office_name_word">办公室名称:</view>
+  <input class="office_name_input" bindinput="office_name_input" placeholder="例:北京朝阳十里堡甲3号院甲1号楼" />
+  </view>
+  <view class="container1">
+  <view class="office_charge_name_word">管理员姓名:</view>
+  <input class="office_charge_name_input" bindinput="office_charge_name_input" placeholder="例:张三李四王五赵六" />
+  </view>
+</view>
+
+
+<view class="confirm" bind:tap="confirm" >提交申请</view>

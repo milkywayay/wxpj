@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo{
+  height: 100rpx;
+  width: 100rpx;
+}

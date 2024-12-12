@@ -1,0 +1,63 @@
+.add_location {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(214, 147, 58, 0.842);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.address_formatted{
+  font-size: 25rpx;
+}
+
+.building_house {
+  font-size: 40rpx;
+}
+
+.building_house {
+  margin-left: 10rpx;
+}
+
+.container {
+  margin: 20rpx;
+  border-bottom: 1rpx solid rgba(214, 147, 58, 0.842);
+}
+
+.container1 {
+  display: grid;
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1; /* Make sure it takes up the remaining space */
+}
+
+.change {
+  margin-left: auto; /* Push the image to the far right */
+}
+
+.container2 {
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.address_nickName,
+.address_phoneNumber {
+  font-weight: lighter;
+}
+
+.address_phoneNumber {
+  margin-left: 100rpx;
+}
+
+.change{
+  height: 40rpx;
+  width: 40rpx;
+}

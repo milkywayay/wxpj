@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="container1">
+    <image src="{{avater_receive}}" class="avater_receive" mode="aspectFill"/>
+    <view class="attention" bind:tap="attention" wx:if="{{!attention}}" >点击+关注</view>
+    <view class="attention" bind:tap="cancel_attention" wx:if="{{attention}}" >已关注</view>
+  </view>
+
+
+  <view class="container2">
+    <view class="attentioned" bind:tap="attentioned" wx:if="{{!attentioned&&!attention_qs}}">发送聊天请求</view>
+    <view class="attentioned"  wx:if="{{!attentioned&&attention_qs}}">已发送关注请求</view>
+   
+    <view class="attentioned"  wx:if="{{attentioned}}">对方已关注您</view>
+    <image src="{{avater_send}}" class="avater_receive" mode="aspectFill"/>
+  </view>
+  <view class="noSend">对方回复后可发送信息</view>
+</view>

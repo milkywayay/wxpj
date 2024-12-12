@@ -1,0 +1,100 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/map",
+    "pages/map/address_library",
+    "pages/school/school_sever",
+    "pages/me/info_all",
+    "pages/me/me",
+    "pages/me/info_change",
+    "pages/me/my_booking",
+    "pages/school/toilet_paper",
+    "pages/school/data_collection",
+    "pages/school/lssue",
+    "pages/school/be_teacher",
+    "pages/school/teacher_center",
+    "pages/school/history",
+    "pages/school/history_detail",
+    "pages/school/write_lssue",
+    "pages/orders/orders",
+    "pages/orders/detail",
+    "pages/judge/judge",
+    "pages/settings/settings",
+    "pages/school/getParcel",
+    "pages/add/addParcel",
+    "pages/add/add_location",
+    "pages/booking/booking",
+    "pages/booking/add_office",
+    "pages/seller/be_seller",
+    "pages/judge/history_judge",
+    "pages/seller/seller_center",
+    "pages/seller/send",
+    "pages/seller/commodity",
+    "pages/seller/commodity_add",
+    "pages/talk/discuss",
+    "pages/talk/add_discuss",
+    "pages/talk/discuss_setail",
+    "pages/talk/discuss/like",
+    "pages/talk/discuss/collect",
+    "pages/talk/discuss/post",
+    "pages/talk/discuss/evaluation",
+    "pages/talk/discuss/evaluation/detail",
+    "pages/talk/discuss/evaluation/proof",
+    "pages/manager/manager_center",
+    "pages/manager/be_manager",
+    "pages/shopping/shopping_center",
+    "pages/shopping/shopping_search",
+    "pages/shopping/ordering",
+    "pages/shopping/commodity",
+    "pages/customPreview/customPreview",
+    "pages/evaluation/mimeDiscuss_proof",
+    "pages/developer/call",
+    "pages/messages/all_messages",
+    "pages/messages/messaging",
+    "pages/messages/wait",
+    "pages/SC/attention",
+    "pages/roommates/opinion",
+    "pages/roommates/creat",
+    "pages/roommates/add"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "多寰",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabBar/花前.png",
+      "selectedIconPath": "images/tabBar/花后.png"
+    }, {
+      "pagePath": "pages/talk/discuss",
+      "text": "多寰广告",
+      "iconPath": "images/tabBar/广告前.png",
+      "selectedIconPath": "images/tabBar/广告后.png"
+    }, {
+      "pagePath": "pages/messages/all_messages",
+      "text": "消息",
+      "iconPath": "images/tabBar/message1.png",
+      "selectedIconPath": "images/tabBar/message2.png"
+    }, {
+      "pagePath": "pages/me/info_all",
+      "text": "我的",
+      "iconPath": "images/tabBar/猫前.png",
+      "selectedIconPath": "images/tabBar/猫后.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

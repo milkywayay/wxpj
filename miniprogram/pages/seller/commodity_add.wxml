@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="commodity_name_word">商品名称:</view>
+  <input class='commodity_name_input' bindinput='commodity_name' />
+</view>
+<view class="container">
+  <view class="commodity_brief_word">商品简介:</view>
+  <textarea class='commodity_brief_input' bindinput="commodity_brief" />
+</view>
+<view class="container">
+  <view class="money_word">商品价钱(元):</view>
+  <input class='money_input' bindinput='money' type="digit" />
+</view>
+<image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/talk/add_discuss/图片上传.png" class='photo' bind:tap="photo" />
+
+<view  wx:if="{{have_imgurl}}">
+  <view wx:for="{{[0,1,2]}}" wx:key="I" wx:for-item="I" bind:tap="viewFull" data-photo="{{imgurl}}">
+    <view style="flex-direction:row;display:flex;">
+      <view wx:for="{{imgurl}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+        <view wx:if="{{index>=I*3 && index<3*(I+1)}}" class="flex-item">
+          <image src="{{item}}" class="container1" style="width: 100px; height: 100px; margin: 5px;border-radius: 10rpx;" mode="aspectFill" bind:tap="viewFull" data-photo="{{item}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="confirm" bind:tap="confirm">确认填加</view>
+
+

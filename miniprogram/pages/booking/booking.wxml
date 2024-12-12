@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="row">
+  <block wx:for="{{[1, 2, 3]}}" wx:key="*this">
+    <view class="cell" bindtap="choose" data-s="{{item}}" style="background-color:{{myShow[item] ? 'rgba(214, 147, 300, 0.842)' : (show[item] ? 'rgba(214, 147, 58, 0.842)' : (tempShow[item] ? 'rgba(214, 147, 300, 0.842)' : 'white'))}}">{{item}}</view>
+  </block>
+</view>
+  <view class="row">
+    <block wx:for="{{[4, 5, 6]}}" wx:key="*this">
+    <view class="cell" bindtap="choose" data-s="{{item}}" style="background-color:{{myShow[item] ? 'rgba(214, 147, 300, 0.842)' : (show[item] ? 'rgba(214, 147, 58, 0.842)' : (tempShow[item] ? 'rgba(214, 147, 300, 0.842)' : 'white'))}}">{{item}}</view>
+  </block>
+  </view>
+
+  <view class="container1">
+    <view class="color-indicator">
+      <view class="indicator" style="background-color: rgba(214, 147, 58, 0.842);"></view>
+      <view class="label">已选</view>
+      <view class="indicator" style="background-color: white; border: 1px solid black;"></view>
+      <view class="label">未选</view>
+      <view class="indicator" style="background-color: rgba(214, 147, 300, 0.842); border: 1px solid black;"></view>
+      <view class="label">我的选择</view>
+    </view>
+
+    <view class="add_office" bind:tap="add_office">添加办公室</view>
+  </view>
+
+  <view class="appointment">
+    <picker value="{{index}}" range="{{office_name}}" mode="selector" bindchange="bindOfficeChange">
+      <view class="office_name">
+        当前办公室：{{office_name[index]}}
+      </view>
+    </picker>
+  </view>
+
+
+
+  <view class="appointment">
+    <picker mode="date" value="{{date}}" start="2020-01-01" end="2030-12-31" bindchange="bindDateChange">
+      <view class="date">
+        预约日期：{{date}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="choose">当前选择：{{choose}}</view>
+<view class="confirm" bind:tap="confirm">提交预约</view>

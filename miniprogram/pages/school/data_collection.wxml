@@ -1,0 +1,4 @@
+<view class="lssues" wx:for="{{lssues}}" wx:key="index" bind:tap="write_lssue" data-l="{{item._id}}">
+  <view class="nickName">发布人：{{item.nickName}}</view>
+  <view class="title">任务：{{item.title}}</view>
+</view>

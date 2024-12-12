@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="form-section">
+    <view class="form-item">
+      <text class="label" bind:tap="location">选择校区</text>
+      <text class="value" bind:tap="location">{{address_formatted}}</text>
+    </view>
+    
+    <view class="form-item">
+      <text class="label">详细地址</text>
+      <input class="input" value="{{building_house}}" bindinput="building_house"  />
+    </view>
+
+    <view class="form-item">
+      <text class="label">联系人姓名</text>
+      <input class="input" value="{{address_nickName}}" bindinput="address_nickName" />
+    </view>
+
+    <view class="form-item">
+      <text class="label">性别</text>
+      <radio-group class="radio-group" bindchange="onGenderChange">
+        <label class="radio-label">
+          <radio value="female" checked="{{gender === 'female'}}" /> 女士
+        </label>
+        <label class="radio-label">
+          <radio value="male" checked="{{gender === 'male'}}" /> 先生
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="form-item">
+      <text class="label">手机号</text>
+      <input class="input" value="{{address_phoneNumber}}" bindinput="address_phoneNumber" type="digit"/>
+    </view>
+
+    <view class="form-item">
+      <text class="label">设置为默认地址</text>
+      <switch class="switch" checked="{{defaultAddress}}" bindchange="onDefaultAddressChange" />
+    </view>
+  </view>
+  
+  <view class="button-group">
+    <button class="save-button" bindtap="confirm">保存</button>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="info1">
+    <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/TEST/LOGO_空3.jpg" mode="aspectFit" class="LOGO" class="logo"/>
+    <view>如果您遇到任何问题，请联系我们</view>
+    <view>上海多寰文化科技有限公司</view>
+    <view class="container1">
+      <view class="info2">夏常清</view>
+      <view class="info">xiachangqing@shdhwh.com.cn</view>
+      <view class="info">18330529472</view>
+    </view>
+  </view>
+</view>

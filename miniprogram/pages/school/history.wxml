@@ -1,0 +1,9 @@
+<view class="lssues" wx:for="{{lssues}}" wx:key="index"  data-l="{{item._id}}">
+  <view class="nickName">发布人：{{item.nickName}}</view>
+  <view class="title">任务：{{item.title}}</view>
+  <view class="write_numbers">填写人数：{{item.write_numbers}}</view>
+  <view class="derive" bind:tap="derive" data-d="{{item}}">导出</view>
+  <view class="export-section">
+  <button bindtap="derive">导出所有数据为 Excel</button>
+</view>
+</view>

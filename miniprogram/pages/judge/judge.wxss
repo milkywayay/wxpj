@@ -1,0 +1,31 @@
+.quest{
+  margin: 30rpx;
+}
+.quest_word{
+  font-weight: 600;
+  font-size: large;
+  margin-bottom: 30rpx;
+}
+.quest_input {
+  margin: 30rpx;
+  border: 1px solid #ccc; /* 添加一个1像素宽度的灰色实线边框 */
+  border-radius: 20rpx; /* 添加5像素的圆角 */
+  padding: 8px; /* 添加内边距，使内容不紧贴边框 */
+}
+
+.confirm{
+  background-color: rgba(214, 147, 58, 0.842);
+  padding: 15rpx;
+  color: white;
+  border-radius: 15rpx;
+  text-align: center;
+  padding: 300rpx ;
+  font-size: 60rpx;
+  font-weight: bolder;
+}
+
+
+
+
+
+

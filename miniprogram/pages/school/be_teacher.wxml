@@ -1,0 +1,2 @@
+<view class="confirm" wx:if="{{!audit}}" bind:tap="confirm">一键提交申请</view>
+<view class="wait" wx:if="{{audit}}" class="confirm">您的申请已提交，正在审核中，请留意来电</view>

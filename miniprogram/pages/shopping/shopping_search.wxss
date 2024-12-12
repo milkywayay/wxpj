@@ -1,0 +1,48 @@
+.container{
+  padding: 20rpx;
+}
+
+
+
+.container1{
+display: flex;
+margin-top: 30rpx;
+}
+
+.container1_1{
+  margin-left: 30rpx;
+  display: grid;
+  font-size: 40rpx;
+}
+
+.money{
+  color: rgba(214, 147, 58, 0.842);
+}
+
+.imgurl{
+height: 300rpx;
+width: 300rpx;
+border-radius: 30rpx;
+}
+
+
+
+.container_search{
+  background-color:rgba(214, 147, 58, 0.842);
+  padding:20rpx;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search_input{
+  background-color: white;
+  width:60%;
+  margin: 0 auto;
+  padding:20rpx;
+  border-radius: 30rpx;
+}
+
+.search_photo{
+  height: 72rpx;
+  width: 72rpx;
+}

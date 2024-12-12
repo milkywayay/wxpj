@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="container1">
+    <image class='send_photo' bind:tap="send" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/seller_center/订单发货管理.png' />
+    <view class="send_word" bind:tap="send">订单发货</view>
+  </view>
+
+  <view class="container2">
+    <image class='commodity_photo' bind:tap="commodity" src='cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/seller_center/商品管理.png' />
+    <view class="commodity_word" bind:tap="commodity">商品管理</view>
+  </view>
+</view>
+
+<!-- <view class="commodity_word" bind:tap="commodity">我的广告</view> -->
+
+
+
+<view class="allData" wx:for="{{allData}}" wx:key="index">
+  <view class="name">商品:{{item.name}}</view>
+  <view class="gender">购买者信息:{{item.gender}}</view>
+  <view class="send" bind:tap="send" data-s='{{item}}'>一键发货</view>
+</view>

@@ -1,0 +1,58 @@
+<view class="container">
+
+  <view class="title">
+    <view class="title_word">任务标题</view>
+    <input placeholder="输入任务标题" class="title_input" bindinput="title" maxlength="-1" />
+  </view>
+
+  <view class="title">
+    <view class="title_word">要求</view>
+    <textarea placeholder="输入任务标题" class="title_input" bindinput="request" maxlength="-1" />
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+    <view wx:for="{{field}}" wx:key="id"  data-id="{{item.id}}">
+      <view class="title">
+      <view class="container1">
+        <view class="proof">字段{{item.id}}：</view>
+        <view class="delete" bind:tap="delete" data-id="{{item.id}}">删除字段</view>
+      </view>
+      <view class="word">字段名称及描述:</view>
+      <input class="input" bindinput="input" data-id="{{item.id}}" value="{{item.platform}}" placeholder="输入字段名称及描述" />
+      <!-- <view class="imgurl" bind:tap="upload_photo" data-id="{{item.id}}">上传图片/视频</view>
+    <view class="attention">如需上传新影影像，建议等待当前照片/视频完全显示后进行</view> -->
+
+      <!-- 凭证图片 -->
+      <!-- <view wx:for="{{[0,1,2]}}" wx:key="I" wx:for-item="I">
+      <view style="flex-direction:row;display:flex;">
+        <view wx:for="{{item.imgurl}}" wx:key="index" wx:for-index="index" wx:for-item="media">
+          <view wx:if="{{index >= I * 3 && index < 3 * (I + 1)}}" class="flex-item">
+            <view class="photo-container" wx:if="{{media.fileType === 'image'}}">
+              <image bind:tap="viewFull" data-photo="{{media.fileID}}" data-proof-id="{{item.id}}" class="discuss_photo" src="{{media.fileID}}" style="width: 100px; height: 100px; margin: 1px;" mode="aspectFill"></image>
+            </view>
+            <view class="video-container" wx:if="{{media.fileType === 'video'}}">
+              <video class="discuss_video" src="{{media.fileID}}" style="width: 100px; height: 100px; margin: 1px;" controls></video>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view> -->
+    </view>
+
+
+  </view>
+  <view class="add" bind:tap="add">添加字段</view>
+</view>
+
+<view class="confirm" bind:tap="confirm">发布</view>
+

@@ -1,0 +1,74 @@
+<view class="agree_revice" bind:tap="agree_revice">新审核接受</view>
+
+<view class="container">
+  <view class="office_data" wx:for="{{office_data}}" wx:key="index">
+    <view class="phoneNumber">电话:{{item.phoneNumber}}</view>
+    <view class="office_name">办公室名称:{{item.office_name}}</view>
+    <view class="office_charge_name">管理员姓名:{{item.office_charge_name}}</view>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t="{{item}}">通过</view>
+  </view>
+
+  <view class="manager_data" wx:for="{{manager_data}}" wx:key="index">
+    <view class="phoneNumber">电话:{{item.phoneNumber}}</view>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t='{{item}}'>通过</view>
+  </view>
+
+  <view class="seller_data" wx:for="{{seller_data}}" wx:key="index">
+    <view class="phoneNumber">{{item.phoneNumber}}</view>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t='{{item}}'>通过</view>
+    <view class="pass" bind:tap="no_pass" data-t='{{item}}'>不通过</view>
+  </view>
+
+  <view class="post_data" wx:for="{{post_data}}" wx:key="index">
+    <view class="phoneNumber">{{item.phoneNumber}}</view>
+    <view class="heading">{{item.heading}}</view>
+    <view class="body">{{item.body}}</view>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t='{{item}}'>通过</view>
+    <view class="pass" bind:tap="no_pass" data-t='{{item}}'>不通过</view>
+  </view>
+
+
+  <view class="commodity_data" wx:for="{{commodity_data}}" wx:key="index">
+    <view class="phoneNumber">{{item.phoneNumber}}</view>
+    <view class="payee">{{item.payee}}</view>
+    <view class="commodity_name">{{item.commodity_name}}</view>
+    <view class="commodity_brief">{{item.commodity_brief}}</view>
+    <view class="money">{{item.money}}</view>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t='{{item}}'>通过</view>
+  </view>
+
+  <view class="nickName_data" wx:for="{{nickName_data}}" wx:key="index">
+    <view class="phoneNumber">{{item.phoneNumber}}</view>
+    <view class="old_nickName">{{item.old_nickName}}</view>
+    <view class="new_nickName">{{item.new_nickName}}</view>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t='{{item}}'>通过</view>
+    <view class="pass" bind:tap="no_pass" data-t='{{item}}'>不予通过</view>
+  </view>
+
+
+  <view class="avater_data" wx:for="{{avater_data}}" wx:key="index">
+    <view class="phoneNumber">{{item.phoneNumber}}</view>
+    <image  src="{{item.new_avater}}"></image>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t='{{item}}'>通过</view>
+    <view class="pass" bind:tap="no_pass" data-t='{{item}}'>不予通过</view>
+  </view>
+
+
+  <view class="avater_data" wx:for="{{teacher_data}}" wx:key="index">
+    <view class="phoneNumber">{{item.phoneNumber}}</view>
+    <view class="nickName">{{item.nickName}}</view>
+    <view class="type">类别:{{item.type}}</view>
+    <view class="pass" bind:tap="pass" data-t='{{item}}'>通过</view>
+    <view class="pass" bind:tap="no_pass" data-t='{{item}}'>不予通过</view>
+  </view>
+
+
+
+</view>

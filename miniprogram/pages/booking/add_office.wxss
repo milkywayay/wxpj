@@ -1,0 +1,43 @@
+.container{
+  padding:20rpx
+}
+
+.attention{
+  color: red;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+
+.container1{
+  padding:20rpx;
+  font-size: 30rpx;
+  width: 1000rpx;
+} 
+
+
+.office_name_input,
+.office_charge_name_input{
+  margin: 20rpx;
+  border: 6rpx solid rgba(214, 147, 58, 0.842);
+  width: 600rpx;
+  padding:24rpx;
+  border-radius:30rpx;
+}
+
+
+.confirm{
+  text-align: center;
+  background-color: rgba(214, 147, 58, 0.842);
+  color: white;
+  border-radius:30rpx ;
+  padding:20rpx;
+  width: 30%;
+  margin:  20rpx auto 0;
+  margin-top: 360rpx;
+  font-size: large;
+}
+
+
+.confirm:active{
+  background-color: rgb(204, 204, 134);
+}

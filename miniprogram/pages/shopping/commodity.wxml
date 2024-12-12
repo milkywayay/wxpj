@@ -1,0 +1,20 @@
+<view class="banner">
+  <swiper indicator-dots="true" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff">
+    <block wx:for="{{showData.imgurl}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFit"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="container">
+  <view class="money">¥{{showData.money}}</view>
+  <view class="commodity_name">{{showData.commodity_name}}</view>
+  <view class="commodity_brief">{{showData.commodity_brief}}</view>
+</view>
+
+<view class="order">
+  <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/me/分享.png" mode="aspectFill" class="share" bind:tap="share" />
+  <view class="orders" bind:tap="order"  >立即下单</view>
+</view>

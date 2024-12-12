@@ -1,0 +1,14 @@
+<view class="banner">
+<swiper current="{{currentIndex}}" bindchange="onSwiperChange" >
+  <block wx:for="{{mediaList}}" wx:key="index">
+    <swiper-item>
+      <view wx:if="{{item.fileType == 'image'}}">
+        <image src="{{item.fileID}}" class="slide-image" mode="aspectFit"></image>
+      </view>
+      <view wx:if="{{item.fileType == 'video'}}">
+        <video src="{{item.fileID}}" style="width: 100%; height: 100%;" controls autoplay></video>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+</view>

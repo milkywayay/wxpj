@@ -1,0 +1,22 @@
+.container{
+  padding:30rpx;
+
+}
+
+.attention{
+  color:red;
+}
+
+.word{
+  background-color:rgba(214, 147, 58, 0.842) ;
+  color: white;
+  border-radius: 30rpx;
+  padding:20rpx;
+  margin-top: 30rpx;
+  text-align: center;
+
+}
+
+.word:active{
+  background-color: cadetblue;
+}

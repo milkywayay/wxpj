@@ -1,0 +1,44 @@
+<!--送快递-->
+<view class="tab-bar">
+  <view class="tab-item {{currentTab == 1 ? 'active' : ''}}" data-tab="1" bindtap="switchTab">待送达</view>
+  <view class="tab-item {{currentTab == 2 ? 'active' : ''}}" data-tab="2" bindtap="switchTab">配送中</view>
+  <view class="tab-item {{currentTab == 3 ? 'active' : ''}}" data-tab="3" bindtap="switchTab">已送达</view>
+</view>
+
+<!--待送达、添加快递-->
+
+<view class="content {{currentTab == 1 ? 'active' : ''}}">
+  <view class="add-parcel-button" bind:tap="addParcel">点击添加快递</view>
+  <view class="infof" wx:for="{{allDataf}}" wx:key="index" class="parcel">
+    <view class="parcelValue">取货码：{{item.parcelValue}}</view>
+    <view class="out_trade_no">订单编号：{{item.out_trade_no}}</view>
+    <view class="time">{{item.time}}</view>
+    <view class="addressParcel">快递地址：{{item.addressParcel}}</view>
+    <view class="addressMe">送达地址：{{item.addressMe}}</view>
+    <view class="nickName">下单昵称：{{item.nickName}}</view>
+    <view class="price">￥{{item.price}}</view>
+    <view class="cencel" bind:tap="cencel" data-cencel="{{item}}">取消</view>
+  </view>
+</view>
+
+<view class="content {{currentTab == 2 ? 'active' : ''}}">
+  <view class="infof" wx:for="{{allDataf}}" wx:key="index" class="parcel">
+    <view class="parcelValue">取货码：{{item.parcelValue}}</view>
+    <view class="out_trade_no">订单编号：{{item.out_trade_no}}</view>
+    <view class="nickName">下单昵称：{{item.nickName}}</view>
+    <view class="price">￥{{item.price}}</view>
+    <view class="time">接单时间：{{item.time}}</view>
+  </view>
+</view>
+
+<!--已经送达快递（历史订单）-->
+
+<view class="content {{currentTab == 3 ? 'active' : ''}}">
+  <view class="infof" wx:for="{{allDataf}}" wx:key="index" class="parcel">
+    <view class="parcelValue">取货码：{{item.parcelValue}}</view>
+    <view class="out_trade_no">订单编号：{{item.out_trade_no}}</view>
+    <view class="nickName">下单昵称：{{item.nickName}}</view>
+    <view class="price">￥{{item.price}}</view>
+    <view class="time">送达时间：{{item.time}}</view>
+  </view>
+</view>

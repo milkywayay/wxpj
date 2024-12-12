@@ -1,0 +1,24 @@
+<view class="show" wx:if="{{show}}">
+  <view wx:for="{{proofs}}" wx:key="id" class="container">
+    <view class="container1">
+      <view class="proof">凭证{{item.id}}：</view>
+    </view>
+    <view class="word">发布平台: {{item.platform}}</view>
+    <view class="attention">凭证影像：</view>
+    <!-- 凭证图片 -->
+    <view wx:for="{{[0,1,2]}}" wx:key="I" wx:for-item="I">
+      <view style="flex-direction:row;display:flex;">
+        <view wx:for="{{item.imgurl}}" wx:key="index" wx:for-index="index" wx:for-item="media">
+          <view wx:if="{{index >= I * 3 && index < 3 * (I + 1)}}" class="flex-item">
+            <view class="photo-container" wx:if="{{media.fileType === 'image'}}">
+              <image bind:tap="viewFull" data-photo="{{media.fileID}}" class="discuss_photo" src="{{media.fileID}}" style="width: 100px; height: 100px; margin: 1px;" mode="aspectFill"></image>
+            </view>
+            <view class="video-container" wx:if="{{media.fileType === 'video'}}">
+              <video class="discuss_video" src="{{media.fileID}}" style="width: 100px; height: 100px; margin: 1px;" controls></video>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

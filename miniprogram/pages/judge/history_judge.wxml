@@ -1,0 +1,8 @@
+<view class="scores" wx:for="{{scores}}" wx:key="index">
+  <view class="container">
+    <view class="judge_time">{{item.judge_time}}</view>
+    <view class="score">人格分数：{{item.score}}</view>
+    <view class="person_type">人格类型：{{item.person_type}}</view>
+    <view class="describe">人格描述：{{item.describe}}</view>
+  </view>
+</view>

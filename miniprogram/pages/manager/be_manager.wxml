@@ -1,0 +1,1 @@
+<view class="confirm" bind:tap="confirm">一键提交申请</view>

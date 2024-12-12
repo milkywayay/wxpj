@@ -1,0 +1,48 @@
+<view class="container">
+  <!-- chat区 -->
+
+
+  <scroll-view class="chat-container {{scrollStyle ? 'scrolling' : ''}}" scroll-y="true" scroll-x="false" scroll-into-view="{{toView}}" scroll-with-animation="true" bindscroll="handleScroll">
+    <block wx:for="{{messages}}" wx:key="time">
+      <view class="message-container" wx:if="{{item.phoneNumber_send == myPhoneNumber}}">
+        <view class="time_right">{{item.time}}</view>
+        <view class="message-box">
+          <view class="message right" wx:if="{{item.message}}">{{item.message}}</view>
+          <view wx:elif="{{item.type==='image'}}">
+            <image src="{{item.photo}}" mode="aspectFill" class="photo" bind:tap="previewImage" data-url="{{item.photo}}" />
+          </view>
+          <view wx:else>
+            <video src="{{item.photo}}" mode="aspectFill" class="photo" />
+          </view>
+          <image src="{{avater_send}}" mode="aspectFill" class="avater_send" />
+        </view>
+      </view>
+      <view class="message-container" wx:else>
+        <view class="time_left">{{item.time}}</view>
+        <view class="message-box">
+          <image src="{{avater_receive}}" mode="aspectFill" class="avater_receive" />
+          <view class="message left" wx:if="{{item.message}}">{{item.message}}</view>
+          <view wx:elif="{{item.type==='image'}}">
+            <image src="{{item.photo}}" mode="aspectFill" class="photo" bind:tap="previewImage"  data-url="{{item.photo}}"/>
+          </view>
+
+          <view wx:else>
+            <video src="{{item.photo}}" mode="aspectFill" class="photo"  />
+          </view>
+        </view>
+      </view>
+    </block>
+    <view id="bottom"></view>
+  </scroll-view>
+
+
+
+  <!-- send区 -->
+  <view class="container_send">
+    <view class="container_send2"> 
+      <input  focus="{{inputFocus}}" confirm-hold="{{true}}" hold-keyboard="{{true}}" bindinput="message_input" class="message_input" value="{{message}}" confirm-type="send" bindconfirm="send" />
+      <view class="send" bindtap="send">发送</view>
+      <view class="send" bind:tap="photo">影像</view>
+    </view>
+  </view>
+</view>

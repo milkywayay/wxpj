@@ -1,0 +1,112 @@
+.title_input{
+  margin-top: 30rpx;
+  }
+  
+  .container{
+    margin:30rpx
+  }
+  
+  .title_word,
+  .word{
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid;
+  }
+  
+  .proof {
+    font-size: 45rpx;
+    font-weight: bolder;
+  }
+  
+  .title{
+    border:1rpx solid;
+    border-radius: 30rpx;
+    padding:30rpx;
+    margin-bottom: 60rpx;
+  }
+  
+  .container1{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .add{
+    /* margin:30rpx; */
+    background-color: rgba(214, 147, 58, 0.842);
+    color: white;
+    padding:20rpx;
+    border-radius: 30rpx;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .add:active{
+    background-color: cadetblue;
+  }
+  
+  .input{
+    margin-top: 30rpx;
+  }
+  
+  
+  .delete{
+    border: 1rpx solid rgba(214, 147, 58, 0.842);
+    border-radius: 30rpx;
+    padding:20rpx;
+  }
+  
+  .confirm {
+    margin-top: 100rpx;
+    padding: 20rpx;
+    border-radius: 30rpx;
+    background-color: rgba(214, 147, 58, 0.842);
+    display: flex; /* 启用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    text-align: center;
+    color: white;
+  }
+  
+  .add:active,
+  .confirm:active{
+    background-color: cadetblue;
+  }
+  
+  
+  
+  
+  
+  
+  .imgurl{
+    font-size: 30rpx;
+    color: rgba(214, 147, 58, 0.842);
+  }
+  
+  .imgurl:active{
+    color: rgb(56, 163, 158);
+  }
+
+
+  .address_formatted{
+    margin:20rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid;
+  }
+  
+
+  .attention{
+    background-color: rgba(214, 147, 58, 0.842);
+    color: white;
+    padding: 30rpx;
+    text-align: center;
+    border-radius: 30rpx;
+    margin-top: 90rpx;
+    margin:30rpx;
+  }
+  
+  
+  
+  
+  
+  
+  

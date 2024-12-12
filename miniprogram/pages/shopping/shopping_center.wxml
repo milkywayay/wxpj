@@ -1,0 +1,15 @@
+<view class="container_search">
+  <input class='search_input' bindinput='search_input' placeholder='搜点什么吧～' />
+  <image src="cloud://company-6gxdqmbcca524546.636f-company-6gxdqmbcca524546-1326967527/shopping/搜索.png" class='search_photo' bindtap='search' />
+</view>
+<view class="container">
+  <view class="allData" wx:for="{{allData}}" wx:key="index" bind:tap="view" data-t="{{item}}">
+    <view class="container1">
+      <image class="imgurl" src="{{item.imgurl[0]}}" mode="aspectFill" />
+      <view class="container1_1">
+        <view class="commodity_name">{{item.commodity_name}}</view>
+        <view class="money">¥{{item.money}}</view>
+      </view>
+    </view>
+  </view>
+</view>

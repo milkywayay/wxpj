@@ -1,0 +1,123 @@
+<view class="quest">
+  <view class="quest_word">性别：</view>
+  <view class="quest_input">
+    <picker mode="selector" range="{{sex}}" bindchange="sex">
+      <view class="picker">
+        当前选择: {{sex[index_sex]}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">年龄：</view>
+  <view class="quest_input">
+    <picker mode="selector" range="{{age}}" bindchange="age">
+      <view class="picker">
+        当前选择: {{age[index_age]}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">你喜欢与人交往吗?</view>
+  <view class="quest_box">
+    <radio-group bindchange="question1" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="checkbox" wx:for="{{question1}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">你是否容易感到紧张或焦虑？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question2" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question2}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+
+<view class="quest">
+  <view class="quest_word">你是否乐于助人？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question3" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question3}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">你是否善于处理冲突？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question4" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question4}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">你是喜欢尝试新事物？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question5" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question5}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">你是否乐观？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question6" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question6}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view> 
+
+<view class="quest">
+  <view class="quest_word">你是否喜欢独处？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question7" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question7}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">你是否有很强的责任感？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question8" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question8}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="quest">
+  <view class="quest_word">你是否喜欢冒险？</view>
+  <view class="quest_box">
+    <radio-group bindchange="question9" style="display: flex; flex-direction: column; align-items: flex-start;">
+      <label class="radio" wx:for="{{question9}}" wx:key="index" style="margin-bottom: 10px;">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view  class="confirm" bind:tap="confirm">提交测评</view>
